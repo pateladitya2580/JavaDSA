@@ -23,3 +23,5 @@ public class evenOdd {
 // < less than
 // >= greater than equal to
 // <= less than equal to
+// && end me dono condition true honi chaiye
+// || or me koi ek condition true honi chaiye
