@@ -10,7 +10,7 @@ public class question2 {
         int []arr = {81,17,95,36,31,100,60};
         int sum = 0;
         int n = arr.length;
-        for(int i = 0 ;i< n-1;i++){
+        for(int i = 0 ;i<=n-1;i++){
             sum += arr[i];
         }
         System.out.println("The sum of all the elements in the given array is "+sum);

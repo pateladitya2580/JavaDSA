@@ -35,3 +35,5 @@ public class basicSyntax {
         }
     }
 }
+// array ko jab ham method me pass karte hai to pass by referance hota hai
+// or jab koi inter ko pass karte hai to pass by value hota hai
