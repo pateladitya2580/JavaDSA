@@ -10,7 +10,7 @@ public class question12NextGreaterElement {
         // method 1 :Brute Force
 //        for(int i = 0;i<n;i++){
 //            int max = -1;
-//            for(int j = i+1;j<nj++){
+//            for(int j = i+1;j<n;j++){
 //                if(max<arr[j]){
 //                    max = arr[j];
 //                }
