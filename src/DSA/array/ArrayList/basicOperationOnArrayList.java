@@ -7,6 +7,7 @@ import java.util.ArrayList;
 public class basicOperationOnArrayList {
     static void main(String[] args) {
         ArrayList<Integer> arr = new ArrayList<>();// small bracket me capacity de sakte hai
+//        List<Integer> arr = new ArrayList<>();
         arr.add(0,10);
         arr.add(1,59);
 
