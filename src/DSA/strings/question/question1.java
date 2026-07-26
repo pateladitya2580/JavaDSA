@@ -3,8 +3,6 @@ package DSA.strings.question;
 import java.util.Scanner;
 
 //Input a string and count all the vowels in the given string.
-//str.length se lenght of string
-//str.charAt(i) us index ka character
 public class question1 {
     static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
