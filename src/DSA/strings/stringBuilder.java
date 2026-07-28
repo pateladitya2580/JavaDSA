@@ -8,12 +8,22 @@ public class stringBuilder {
         StringBuilder sb = new StringBuilder("Aditya");
         System.out.println(sb);
         System.out.println(sb.length());
+
         //string builder input
-        System.out.println("Enter the string");
-        StringBuilder tb = new StringBuilder(sc.nextLine());
-        System.out.println(tb);
+//        System.out.println("Enter the string");
+//        StringBuilder tb = new StringBuilder(sc.nextLine());
+//        System.out.println(tb);
+
         //setcharAt(index,'character');
-        tb.setCharAt(1,'a');
-        System.out.println(tb);
+        sb.setCharAt(1,'a');
+        System.out.println(sb);
+
+        //append (last me add karna )
+        sb.append(" Patel");
+        System.out.println(sb);
+
+        //reverse
+        sb.reverse();
+        System.out.println(sb);
     }
 }
