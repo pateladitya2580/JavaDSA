@@ -25,5 +25,16 @@ public class stringBuilder {
         //reverse
         sb.reverse();
         System.out.println(sb);
+
+        StringBuilder st = new StringBuilder("abcdxyz");
+
+        st.deleteCharAt(0);//bcdxyz
+        System.out.println(st);
+
+        st.delete(0,2);//dxyz
+        System.out.println(st);
+
+        st.insert(2,'g');//dxgyz
+        System.out.println(st);
     }
 }
