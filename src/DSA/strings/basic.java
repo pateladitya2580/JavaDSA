@@ -18,5 +18,7 @@ public class basic {
         System.out.print("Enter your name: ");
         String str = sc.next();// ye string ke space ko consider nahi karta
         System.out.println(str);// but sc.nextLine() sab kuch consider karta hai spaces ko bhi
+
+        String []arr = { "aditya","parag","karan","patel"};
     }
 }
