@@ -29,7 +29,6 @@ TimeComplexity = O(n)
 1.**First Loop:**
 * Runs n + 3 times, which simplifies to O(n).
 
-
 2.**Second Loop:**
 * Increments by 2 each time (i += 2), so it runs n/2 times,
 which simplifies to O(n).
