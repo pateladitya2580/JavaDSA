@@ -17,7 +17,7 @@ public class BubbleSort {// Bubble sort Stable sort hai
         int []arr = {5,8,1,-3,8,10};//3,1,2,5,4 isme sahi ayega single pass me
         int n = arr.length;//5,8,1,-3,8,10 isme multiple pass lagenge
         print(arr);
-        //Bubble sort
+        //Bubble sort // Time complexity of bubble sort is n^2
         for (int x = 0; x < n-1; x++) {// n-1 pass
             boolean flag = true;
             for (int i = 0; i <n-1-x ; i++) {
