@@ -13,26 +13,19 @@ public class UpperBound {
     static void main(String[] args) {
         int []arr = {10,23,46,46,91,97,97,140,264};
         int n = arr.length;
-        int x = 40;
+        int target = 46;
         int low = 0;
         int high = n-1;
         int Upper_bound = n;
-        while (low<=high){
-            if(x > arr[n-1]){
-                System.out.println(n);// jab element sabse bada ho array me na ho to n return karo
-            }
-            else if (x<arr[0]){
-                System.out.println(0);//jab element sabse chota ho or array me na ho to 0 return karo
-            }
-            else {
-                int mid = low +  (high - low)/2;
-                if(arr[mid]<x){
-                    low= mid+1;
-                }
-                else if (arr[mid]>x){
-                    Upper_bound = Math.min(Upper_bound,mid);
-                    high = mid-1;
-                }
+
+        while (low <= high) {
+            int mid = low + (high - low) / 2;
+
+            if (arr[mid] > target) {
+                Upper_bound = Math.min(mid,Upper_bound);
+                high = mid - 1;
+            } else {
+                low = mid + 1;
             }
         }
         System.out.println(Upper_bound);
