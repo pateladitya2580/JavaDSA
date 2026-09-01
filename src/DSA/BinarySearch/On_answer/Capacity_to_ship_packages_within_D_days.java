@@ -1,4 +1,4 @@
-package DSA.BinarySearch;
+package DSA.BinarySearch.On_answer;
 // leet code 1011
 public class Capacity_to_ship_packages_within_D_days {
     public boolean isPossible(int c ,int[]arr,int d){

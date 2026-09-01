@@ -1,4 +1,4 @@
-package DSA.BinarySearch;
+package DSA.BinarySearch.On_answer;
 //Leet code 1283
 public class find_the_smallest_Divisor_given_a_Threshold {
     public boolean isPossible(int mid,int []arr,int t){
