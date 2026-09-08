@@ -1,6 +1,6 @@
 package DSA.quick_sort;
 
-public class quick_sort {
+public class randomized_quick_sort {
     public static void print(int []arr){
         for(int ele : arr){
             System.out.print(ele+" ");
@@ -13,9 +13,11 @@ public class quick_sort {
         arr[j] = temp;
     }
     public static int partition(int []arr,int low,int high){
-        int pivot = arr[low] ;int pIdx = low;
+        int mid = (low + high)/2;
+        int pivot = arr[mid] ;int pIdx = mid;
         int smallest = 0;
-        for (int i = low+1; i <= high; i++) {
+        for (int i = low; i <= high; i++) {
+            if(i == mid) continue;
             if(arr[i]<=pivot){
                 smallest++;
             }
@@ -49,11 +51,3 @@ public class quick_sort {
         print(arr);
     }
 }
-//Time complexity in avg case = O(n * long n )
-//Time complexity in worst case = O(n^2)
-//space complexity : recursive call stack space O(log n ) jisko ham 1 bol dete hai
-/*
-merge sort stable hai but quick sort stable nahi hai
-RANDOMIZED PIVOT POINT
-Instead if choosing arr[low] as pivot ,we can choose arr[low + high]/2 as pivot
- */
