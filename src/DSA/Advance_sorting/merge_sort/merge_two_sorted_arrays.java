@@ -1,4 +1,4 @@
-package DSA.merge_sort;
+package DSA.Advance_sorting.merge_sort;
 
 public class merge_two_sorted_arrays {
     public static void combine(int []a,int []b,int []c){

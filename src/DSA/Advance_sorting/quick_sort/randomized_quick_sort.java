@@ -1,4 +1,4 @@
-package DSA.quick_sort;
+package DSA.Advance_sorting.quick_sort;
 
 public class randomized_quick_sort {
     public static void print(int []arr){

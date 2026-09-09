@@ -1,7 +1,6 @@
-package DSA.quick_sort;
-//k th largest from the last is = (n-k+1)smallest// leet code 215
-public class Kth_smallest_element_in_an_array {
-    static int ans ;
+package DSA.Advance_sorting.quick_sort;
+
+public class quick_sort {
     public static void print(int []arr){
         for(int ele : arr){
             System.out.print(ele+" ");
@@ -34,27 +33,27 @@ public class Kth_smallest_element_in_an_array {
         }
         return current_Idx;
     }
-    public static void  quickSelect(int []arr,int low,int high,int k){
-        if(low > high) return;
-        if(low == high){
-            if(low == k-1) ans = arr[low];
-            return;
-        }
+    public static void  quickSort(int []arr,int low,int high){
+        if(low >= high ) return;
+        //pivot (arr[low]) ko sahi jagah rakho
+        //& left part me <= pivot
         int idx = partition(arr,low,high);
-        if(idx == k-1){
-            ans = arr[idx];
-            return;
-        }
-        if((k-1) < idx) quickSelect(arr,low,idx-1,k);
-        else quickSelect(arr,idx+1,high,k);
+        quickSort(arr,low,idx-1);
+        quickSort(arr,idx+1,high);
     }
     static void main(String[] args) {
-        int []arr = {4,9,1,2,6,5,8};
+        int []arr = {4,9,7,1,2,3,6,5,8};
         int n = arr.length;
         print(arr);
-        int k = 4;
-        ans = -1;
-        quickSelect(arr,0,n-1,k);
-        System.out.println(ans);
+        quickSort(arr,0,n-1);
+        print(arr);
     }
 }
+//Time complexity in avg case = O(n * long n )
+//Time complexity in worst case = O(n^2)
+//space complexity : recursive call stack space O(log n ) jisko ham 1 bol dete hai
+/*
+merge sort stable hai but quick sort stable nahi hai
+RANDOMIZED PIVOT POINT
+Instead if choosing arr[low] as pivot ,we can choose arr[low + high]/2 as pivot
+ */

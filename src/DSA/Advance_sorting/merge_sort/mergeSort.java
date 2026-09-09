@@ -1,25 +1,6 @@
-package DSA.merge_sort;
-/* similar question 493
-Array me inversion tab hota hai jab:
-i < j  AND  a[i] > a[j]
-Matlab left side ka element right side ke element se bada ho.
- */
-public class Inversions_count_problem {
-    //global variable
-    static int count;
-    //inversion method
-    public static void inversion(int []a,int []b){
-        int i = 0,j = 0;
-        while (i< a.length && j< b.length){
-            if(a[i]>b[j]){
-                count += (a.length - i);
-                j++;
-            }
-            else{
-                i++;
-            }
-        }
-    }
+package DSA.Advance_sorting.merge_sort;
+
+public class mergeSort {
     //print method
     public static void print(int []arr){
         for(int ele:arr){
@@ -38,6 +19,7 @@ public class Inversions_count_problem {
         while (i < a.length) c[k++] = a[i++];
     }
     // merge sort method
+    //Time complexity O(n log n ) //space complexity n log n
     public static void mergesort(int []arr){
         int n = arr.length;
         if(n == 1) return;//base case
@@ -55,8 +37,6 @@ public class Inversions_count_problem {
         // magic
         mergesort(a);
         mergesort(b);
-        //inversion method use
-        inversion(a,b);
         // combine two sorted array
         combine(a,b,arr);
         //delete a and b to improve space complexity to O(n)
@@ -67,6 +47,5 @@ public class Inversions_count_problem {
         print(a);
         mergesort(a);
         print(a);
-        System.out.println(count);
     }
 }
