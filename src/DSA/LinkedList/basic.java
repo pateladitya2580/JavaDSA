@@ -1,13 +1,12 @@
 package DSA.LinkedList;
-
-public class basic {
-    static class Node{
-        int val;
-        Node next;
-        Node(int val){
-            this.val = val;
-        }
+class Node{
+    int val;
+    Node next;
+    Node(int val){
+        this.val = val;
     }
+}
+public class basic {
     public static void print(Node head){
         Node temp = head;
         while(temp != null){
