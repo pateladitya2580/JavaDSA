@@ -25,7 +25,7 @@ public class Remove_Nth_Node_from_end_of_list {
 
         ListNode fast = head;
         ListNode slow = head;
-        for(int i = 0 ;i< n ;i++){//move 'fast' n steps ahead
+        for(int i = 0 ;i< n ;i++){//move 'fast' n steps ahead // n step ka gap
             fast = fast.next;
         }
         if(fast == null){//n==len
