@@ -1,31 +1,29 @@
 package DSA.LinkedList.questions;
 // Leet code 19. Remove Nth Node From End of List
-public class Remove_Nth_Node_from_end_of_list {
+public class Q3_Remove_Nth_Node_from_end_of_list {
     public ListNode removeNthFromEnd(ListNode head, int n) {
-        // ListNode temp = head;
+        ListNode temp = head;
         // int len =0;
         // while(temp != null){
         //     temp = temp.next;
         //     len++;
         // }
-        // // n from end = (len - n + 1) from start
+        // // nth node from end = (len - n + 1)th node from start
         // if(n == len){
         //     head = head.next;
         //     return head;
         // }
-        // int position = len - n + 1;//position, position-1 us position ka index
+        // int position = len - n + 1;
         // temp = head;
-        // for(int i = 0 ;i< position-2;i++){//
+        // for(int i = 1 ;i<= position-2;i++){// delete hone wali node se age wali node
         //     temp = temp.next;
         // }
         // temp.next = temp.next.next;
         // return head;
 
-        //METHOD 2
-
         ListNode fast = head;
         ListNode slow = head;
-        for(int i = 0 ;i< n ;i++){//move 'fast' n steps ahead // n step ka gap
+        for(int i = 1 ;i<= n ;i++){//move 'fast' n steps ahead
             fast = fast.next;
         }
         if(fast == null){//n==len

@@ -33,7 +33,7 @@ class SLLimplementation{// user defined data structure
         }
         size++;
     }
-    void insert(int idx,int val){
+    void insert(int idx,int val){// 0 base indexing use kar rahe hai yadi 1 base mention hota to wo karte
         Node temp = new Node(val);
         if(idx == 0){
             insertAtBeginning(val);
@@ -48,7 +48,9 @@ class SLLimplementation{// user defined data structure
             return;
         }
         Node x = head;
-        for (int i = 0; i < idx-1; i++) {//0 base indexing
+        //Linked List me i index nahi hota. Usually i ek loop counter / iteration
+        // counter hota hai, jo batata hai ki loop kitni baar execute hua.
+        for (int i = 1; i <= idx-1; i++) {
             x = x.next;
         }
         //insertion
@@ -64,7 +66,7 @@ class SLLimplementation{// user defined data structure
             return -1;
         }
         Node temp = head;
-        for (int i = 0; i < idx ; i++) {
+        for (int i = 1; i <= idx ; i++) {
             temp = temp.next;
         }
         return temp.val;
@@ -83,7 +85,7 @@ class SLLimplementation{// user defined data structure
             return;
         }
         Node temp = head;
-        for (int i = 0; i < idx ; i++) {
+        for (int i = 1; i <= idx ; i++) {
             temp = temp.next;
         }
         temp.val = val;
@@ -109,7 +111,7 @@ class SLLimplementation{// user defined data structure
             return;
         }
         Node temp = head;
-        for (int i = 0; i < idx-1; i++) {
+        for (int i = 1; i <= idx-1; i++) {
             temp = temp.next;
         }
         if(temp.next == tail) tail = temp;
@@ -137,5 +139,6 @@ public class implementation_0f_linkedList {
     }
 }
 /*
-
+linklist me khali ye dekho loop kitni baar chalana hai or i koi index
+nahi hai,wo sirh ye bata raha hai ki loop kitni barr chal raha hai
  */

@@ -1,8 +1,8 @@
 package DSA.LinkedList.questions;
 /*
-1721. Swapping Nodes in a Linked List
+Leet code 1721. Swapping Nodes in a Linked List
  */
-public class Swapping_Nodes_in_a_Linked_List {
+public class Q4_Swapping_Nodes_in_a_Linked_List {
     public ListNode swapNodes(ListNode head, int k) {
         ListNode temp = head;
         ListNode slow = head;

@@ -1,6 +1,6 @@
 package DSA.LinkedList.questions;
 // leet code 876. Middle of the Linked List
-public class Middle_of_the_LInkedList {
+public class Q2_Middle_of_the_LInkedList {
     public ListNode middleNode(ListNode head) {
         // int len =0;
         // ListNode temp = head;
@@ -8,9 +8,9 @@ public class Middle_of_the_LInkedList {
         //     temp = temp.next;
         //     len++;
         // }
-        // int n = (len/2);// (len/2)+1 uski position hai
-        //  temp = head;
-        // for(int i = 0;i<n;i++){
+        // int mid = len/2 + 1;
+        // temp = head;
+        // for(int i = 1 ;i<= mid-1;i++){
         //     temp = temp.next;
         // }
         // return temp;
