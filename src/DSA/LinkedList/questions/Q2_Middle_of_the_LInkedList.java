@@ -19,8 +19,8 @@ public class Q2_Middle_of_the_LInkedList {
         ListNode slow = head;
         ListNode fast = head;
         //null ka next nahi hota
-        while(fast != null && fast.next != null){
-            slow = slow.next;
+        while(fast != null && fast.next != null){//right middle
+            slow = slow.next;// for left middle while(fast.next != null && fast.next.next != null)
             fast = fast.next.next;
         }
         return slow;
