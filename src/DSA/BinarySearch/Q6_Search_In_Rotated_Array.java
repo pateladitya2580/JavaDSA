@@ -1,6 +1,6 @@
 package DSA.BinarySearch;
 //leet code 33
-public class Search_In_Rotated_Array {
+public class Q6_Search_In_Rotated_Array {
     public int search(int[] arr, int target) {
         int n = arr.length;
         int low = 0;

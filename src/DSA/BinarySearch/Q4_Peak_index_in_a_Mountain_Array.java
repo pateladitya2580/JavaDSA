@@ -6,7 +6,7 @@ to a peak element and then decrease.
 Return the index of the peak element.
 Your task is to solve it in O(log(n)) time complexity.
  */
-public class Peak_index_in_a_Mountain_Array {
+public class Q4_Peak_index_in_a_Mountain_Array {
     public int peakIndexInMountainArray(int[] arr) {
         int n = arr.length;
         int low = 1;int high = n-2;

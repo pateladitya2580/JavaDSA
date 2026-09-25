@@ -1,6 +1,6 @@
 package DSA.BinarySearch;
 // leet code 1539
-public class Kth_missing_positive_number {
+public class Q11_Kth_missing_positive_number {
     public int findKthPositive(int[] arr, int k) {
         int n = arr.length;
         int low = 0 ;

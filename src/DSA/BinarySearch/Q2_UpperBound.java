@@ -9,7 +9,7 @@ Example:
 [1, 3, 5, 5, 7, 9], target = 5
 Upper Bound → 7 (first > 5)
  */
-public class UpperBound {
+public class Q2_UpperBound {
     static void main(String[] args) {
         int []arr = {10,23,46,46,91,97,97,140,264};
         int n = arr.length;

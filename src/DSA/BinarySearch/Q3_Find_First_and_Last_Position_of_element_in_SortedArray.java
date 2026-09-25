@@ -8,7 +8,7 @@ Lower Bound = 2
 Upper Bound = 7
 20 ka last index = 6 (upper_bound - 1)
 */
-public class Find_First_and_Last_Position_of_element_in_SortedArray {
+public class Q3_Find_First_and_Last_Position_of_element_in_SortedArray {
     static void main(String[] args) {
         int [] arr = { 10,10,20,20,20,20,20,30,30,30,40,40};
         int n = arr.length;

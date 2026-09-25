@@ -1,7 +1,7 @@
 package DSA.BinarySearch;
 import java.util.*;
 // leet code 658
-public class Find_K_Closest_Elements {
+public class Q7_Find_K_Closest_Elements {
     public List<Integer> findClosestElements(int[] arr, int k, int x) {
         List<Integer> ans = new ArrayList();
         int n = arr.length;

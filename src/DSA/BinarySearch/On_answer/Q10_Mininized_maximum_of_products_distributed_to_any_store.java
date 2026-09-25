@@ -6,7 +6,7 @@ koko eating bananas
 min.time_to_complete_trips
 must do questions;
  */
-public class Mininized_maximum_of_products_distributed_to_any_store {
+public class Q10_Mininized_maximum_of_products_distributed_to_any_store {
     public boolean isPossible(int maxQ,int n ,int []arr){
         int stores = 0;
         for(int i = 0;i<arr.length;i++){

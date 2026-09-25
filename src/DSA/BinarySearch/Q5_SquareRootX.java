@@ -1,6 +1,6 @@
 package DSA.BinarySearch;
 // Leet Code 69
-public class SquareRootX {
+public class Q5_SquareRootX {
     static void main(String[] args) {
         int x = 25;
         int low = 0, high = x;

@@ -1,6 +1,6 @@
 package DSA.BinarySearch.On_answer;
 //Leet code 1283
-public class find_the_smallest_Divisor_given_a_Threshold {
+public class Q8_find_the_smallest_Divisor_given_a_Threshold {
     public boolean isPossible(int mid,int []arr,int t){
         int n = arr.length;
         int sum = 0;
