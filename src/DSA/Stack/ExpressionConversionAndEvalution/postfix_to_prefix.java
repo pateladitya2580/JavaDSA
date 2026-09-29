@@ -1,4 +1,4 @@
-package DSA.Stack;
+package DSA.Stack.ExpressionConversionAndEvalution;
 import java.util.Stack;
 public class postfix_to_prefix {
     static void main(String[] args) {

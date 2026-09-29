@@ -1,4 +1,4 @@
-package DSA.Stack;
+package DSA.Stack.ExpressionConversionAndEvalution;
 import java.util.Stack;
 public class infix {
     static void main(String[] args) {
