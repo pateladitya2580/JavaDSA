@@ -18,8 +18,8 @@ public class Question1 {
 
     private static int sum(Node root){
         if(root == null) return 0;
-        int sum = root.val + sum(root.left) + sum(root.right);
-        return sum;
+        int suM = root.val + sum(root.left) + sum(root.right);
+        return suM;
     }
 
     private static  int product(Node root){
