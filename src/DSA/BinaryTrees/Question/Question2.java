@@ -9,14 +9,18 @@ public class Question2 {
 
     public static int MaxValue(Node root){
         if(root == null) return Integer.MIN_VALUE;
-        int a = root.val, b = MaxValue(root.left),c = MaxValue(root.right);
+        int a = root.val;
+        int b = MaxValue(root.left);
+        int c = MaxValue(root.right);
         int max = Math.max(a,Math.max(b,c));
         return max;
     }
 
     public static int MinValue(Node root){
         if(root == null) return Integer.MAX_VALUE;
-        int a = root.val, b = MinValue(root.left),c = MinValue(root.right);
+        int a = root.val ;
+        int  b = MinValue(root.left);
+        int c = MinValue(root.right);
         int min = Math.min(a,Math.max(b,c));
         return min;
     }
