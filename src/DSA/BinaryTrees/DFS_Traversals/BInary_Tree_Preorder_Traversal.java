@@ -1,4 +1,4 @@
-package DSA.BinaryTrees.Traversals;
+package DSA.BinaryTrees.DFS_Traversals;
 //Binary tree preorder Traversal
 class Node{
     int val;

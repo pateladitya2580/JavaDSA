@@ -1,4 +1,4 @@
-package DSA.BinaryTrees.Traversals;
+package DSA.BinaryTrees.DFS_Traversals;
 import  java.util.*;
 //Leet code 144 preorder
 //Binary Tree Preorder Traversal

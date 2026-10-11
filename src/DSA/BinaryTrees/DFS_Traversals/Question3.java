@@ -1,24 +1,20 @@
-package DSA.BinaryTrees.Traversals;
-
+package DSA.BinaryTrees.DFS_Traversals;
 import java.util.ArrayList;
 import java.util.List;
-
-// Leetcode 94 Binary Tree inorder Traversal
-public class Question2 {
+// Leet code 145 Binary Tree Postorder Traversal
+public class Question3 {
     class Solution {
         private void helper(Node root, List<Integer> ans){
             if(root == null) return;
             helper(root.left,ans);
-            ans.add(root.val);
             helper(root.right,ans);
+            ans.add(root.val);
         }
-        public List<Integer> preorderTraversal(Node root) {
+
+        public List<Integer> postorderTraversal(Node root) {
             List<Integer> ans = new ArrayList<>();
             helper(root,ans);
             return ans;
         }
-    }
-    static void main(String[] args) {
-
     }
 }

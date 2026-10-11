@@ -490,6 +490,183 @@ Binary Tree  -> Maximum 2 children
 BST          -> Ordered Binary Tree
 
 AVL          -> Self-Balancing BST
+======================================================================================================
+========================================
+       TYPES OF BINARY TREES
+========================================
+
+1. FULL BINARY TREE
+-------------------
+Definition:
+Every node has either 0 or 2 children.
+No node can have exactly 1 child.
+
+Diagram:
+
+        1
+       / \
+      2   3
+     / \
+    4   5
+       / \
+      6   7
+
+
+2. PERFECT BINARY TREE
+----------------------
+Definition:
+Every internal node has 2 children,
+and all leaf nodes are at the same level.
+
+Diagram:
+
+        1
+       / \
+      2   3
+     / \ / \
+    4  5 6  7
+
+Properties:
+Total nodes = 2^(h+1) - 1
+Leaf nodes  = 2^h
+
+(h = height measured in edges)
+
+
+3. COMPLETE BINARY TREE
+-----------------------
+Definition:
+Every level is completely filled except
+possibly the last level.
+The last level is filled from left to right.
+
+Diagram:
+
+        1
+       / \
+      2   3
+     / \  /
+    4   5 6
+
+Important:
+No gaps are allowed before a node
+on the last level.
+
+Used in: Binary Heap
+
+
+4. BALANCED BINARY TREE
+-----------------------
+Definition:
+At every node, the difference between
+left and right subtree heights is <= 1.
+
+Condition:
+
+abs(height(root.left)
+    - height(root.right)) <= 1
+
+Diagram:
+
+        3
+       / \
+      2   5
+     /   / \
+    1   4   6
+
+Important:
+The condition must hold at EVERY node,
+not only at the root.
+
+
+5. DEGENERATE BINARY TREE
+-------------------------
+Definition:
+Every internal node has exactly one child.
+
+Diagram:
+
+    1
+     \
+      2
+     /
+    3
+     \
+      4
+
+Properties:
+- Resembles a linked list.
+- Height can be n - 1 edges
+  for n nodes.
+
+
+6. SKEWED BINARY TREE
+---------------------
+
+A skewed tree is a special type of
+degenerate Binary Tree.
+
+A) LEFT-SKEWED TREE
+
+    1
+   /
+  2
+ /
+3
+/
+4
+
+Every internal node has only a left child.
+
+
+B) RIGHT-SKEWED TREE
+
+1
+ \
+  2
+   \
+    3
+     \
+      4
+
+Every internal node has only a right child.
+
+
+========================================
+           QUICK REVISION
+========================================
+
+FULL:
+Every node has 0 or 2 children.
+
+PERFECT:
+All levels are completely filled.
+
+COMPLETE:
+Last level may be incomplete,
+but nodes fill from left to right.
+
+BALANCED:
+Height difference <= 1 at every node.
+
+DEGENERATE:
+Every internal node has exactly 1 child.
+
+SKEWED:
+Tree extends entirely to the left or right.
+
+
+IMPORTANT DIFFERENCES
+---------------------
+1. Full does not necessarily mean Perfect.
+2. Complete does not necessarily mean Perfect.
+3. Balanced does not mean every node has
+   exactly 2 children.
+4. Skewed trees are degenerate trees.
+5. A Perfect Binary Tree is also Full
+   and Complete.
+
+========================================
 */
 public class Basic {
 }
