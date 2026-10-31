@@ -1,4 +1,4 @@
-package DSA.HashMaps_and_HashSets.Question;
+package DSA.HashMaps_and_HashSets.HashSet.Question_HashSet;
 
 import java.util.HashSet;
 

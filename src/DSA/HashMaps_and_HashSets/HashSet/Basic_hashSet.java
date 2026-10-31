@@ -1,8 +1,8 @@
-package DSA.HashMaps_and_HashSets;
+package DSA.HashMaps_and_HashSets.HashSet;
 
 import java.util.HashSet;
 
-public class Basic {
+public class Basic_hashSet {
     static void main(String[] args) {
         HashSet<Integer> set = new HashSet<>();// set me elements random
         // order me jate hai or random order me aate hai

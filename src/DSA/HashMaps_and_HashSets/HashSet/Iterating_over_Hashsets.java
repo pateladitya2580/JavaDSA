@@ -1,4 +1,4 @@
-package DSA.HashMaps_and_HashSets;
+package DSA.HashMaps_and_HashSets.HashSet;
 
 import java.util.HashSet;
 
