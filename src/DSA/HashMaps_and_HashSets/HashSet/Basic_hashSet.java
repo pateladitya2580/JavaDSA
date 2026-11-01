@@ -1,6 +1,7 @@
 package DSA.HashMaps_and_HashSets.HashSet;
 
 import java.util.HashSet;
+import java.util.TreeSet;
 
 public class Basic_hashSet {
     static void main(String[] args) {
@@ -29,7 +30,6 @@ public class Basic_hashSet {
             System.out.print(arr[i]+" ");
         }
         System.out.println();
-
         // In hashset occurence of every element is 1
     }
 }
