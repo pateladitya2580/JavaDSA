@@ -9,8 +9,8 @@ public class Question4 {
             HashMap<Integer,Integer> map = new HashMap<>();
             for(int ele:arr){
                 int key =  ele%k;
-                if(key<0) key += k;
-                if(map.containsKey(key)){
+                if(key<0) key += k;// k negative side ja raha tha islye usme k
+                if(map.containsKey(key)){// add kar ke +ve range me laye hai
                     int freq = map.get(key);
                     map.put(key,freq+1);
                 }
