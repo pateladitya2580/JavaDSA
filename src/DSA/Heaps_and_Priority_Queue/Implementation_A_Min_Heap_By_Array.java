@@ -131,4 +131,8 @@ hai, toh parent aur child nodes ke beech ka index relation yeh hota hai:
    - Description: Agar aapko kisi child node (c, chahe woh left child ho ya
      right child) ka index pata hai aur uska parent find karna hai, toh child
      ke index me se 1 ghata kar 2 se divide karna hota hai (integer division).
+==================================================================================
+1-> A sorted array (accending order ) is always a minheap. Vice-versa
+    is not true;
+2-> A sorted array in decreasing order is always a maxheap.
  */
