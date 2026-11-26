@@ -1,4 +1,4 @@
-package DSA.Dynamic_Programming.Questions;
+package DSA.Dynamic_Programming.Dynamic_Programming_2D;
 // LeetCode 416. Partition Equal Subset Sum
 public class Question16 {
     class Solution {

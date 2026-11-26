@@ -1,4 +1,4 @@
-package DSA.Dynamic_Programming.Questions;
+package DSA.Dynamic_Programming.Dynamic_Programming_2D;
 //Problem: Given an array arr and a target value,
 //check whether any subset exists whose sum equals the target.
 public class Question15 {

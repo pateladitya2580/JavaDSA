@@ -1,4 +1,4 @@
-package DSA.Dynamic_Programming.Questions;
+package DSA.Dynamic_Programming.Dynamic_Programming_2D;
 //LeetCode 64. Minimum Path Sum (2DP problem ) solving by Tabulation
 public class Question11 {
     class Solution {

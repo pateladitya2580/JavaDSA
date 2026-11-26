@@ -1,4 +1,4 @@
-package DSA.Dynamic_Programming.Questions;
+package DSA.Dynamic_Programming.Dynamic_Programming_2D;
 // 0/1 Knapsack problem
 public class Question14 {
     public static int profit(int i,int []wt, int[]val, int C,int[][]dp){

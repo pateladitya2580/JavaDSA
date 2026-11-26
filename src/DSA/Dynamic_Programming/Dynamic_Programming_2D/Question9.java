@@ -1,6 +1,5 @@
-package DSA.Dynamic_Programming.Questions;
+package DSA.Dynamic_Programming.Dynamic_Programming_2D;
 
-import java.util.Arrays;
 //2DP problem
 //LeetCode 62. Unique Paths Problem by (Recursion + Memoization)
 public class Question9 {

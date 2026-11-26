@@ -1,4 +1,4 @@
-package DSA.Dynamic_Programming.Questions;
+package DSA.Dynamic_Programming.Dynamic_Programming_2D;
 //LeetCode 1277 Count Square Submatrices with all Ones.(2 DP problem )
 public class Question12 {
     class Solution {

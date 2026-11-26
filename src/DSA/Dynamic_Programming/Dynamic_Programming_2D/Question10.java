@@ -1,4 +1,4 @@
-package DSA.Dynamic_Programming.Questions;
+package DSA.Dynamic_Programming.Dynamic_Programming_2D;
 //2DP Problem
 //LeetCode 62. Unique Paths Problem by Tabulation Method
 public class Question10 {
